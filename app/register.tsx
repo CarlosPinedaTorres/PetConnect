@@ -10,7 +10,7 @@ const register = () => {
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>
       <Image
-        style={GlobalStyles.logo}
+        style={GlobalStyles.logoLogin}
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
@@ -102,12 +102,13 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     marginLeft: 20,
+   
 
   },
 
 
   loginText: {
-    fontFamily: 'PoppinsRegular',
+    fontFamily: 'PoppinsBold',
     fontSize: 16,
     textDecorationLine: 'underline',
     color: Colors.blanco,

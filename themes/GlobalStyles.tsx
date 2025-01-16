@@ -1,6 +1,24 @@
 import { StyleSheet } from "react-native"
 import { Colors } from "./Colors"
 export const GlobalStyles = StyleSheet.create({
+    drawerTitle:{
+        fontFamily:"WendyOne",
+        fontSize:25,
+        color:Colors.blanco,
+        textAlign: "center", 
+        
+    },
+    
+    drawer:{ 
+        flexDirection: "row", 
+        alignItems: "center", 
+        justifyContent: "center",
+         flex: 1, 
+         position: "relative",
+         height: 60, 
+    },
+ 
+    
     button: {
         backgroundColor: Colors.naranjaClaro,
         color: Colors.blanco,
@@ -17,7 +35,7 @@ export const GlobalStyles = StyleSheet.create({
         fontFamily: " PoppinsRegular",
         color: Colors.colorPrimario
     },
-    logo: {
+    logoLogin: {
         width: 60,
         height: 60,
         position: "absolute",
@@ -25,6 +43,7 @@ export const GlobalStyles = StyleSheet.create({
         top: 5
 
     },
+  
     huellas: {
         width: 40,
         height: 40,
@@ -36,13 +55,13 @@ export const GlobalStyles = StyleSheet.create({
         width:120,
         height:40,
         backgroundColor: Colors.naranjaClaro,
-        color: Colors.blanco,
+        color: Colors.negro,
         borderRadius: 50,
         justifyContent: "center",
         alignItems: "center",
-        fontFamily: "PoppinsRegular",
+        fontFamily: "PoppinsBold",
         textAlign:"center",
-        fontSize:25,
-        paddingTop:5
+        fontSize:20,
+        paddingTop:7
     }
 })

@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>
       <Image
-        style={GlobalStyles.logo}
+        style={GlobalStyles.logoLogin}
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />

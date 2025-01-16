@@ -10,10 +10,10 @@ interface Props {
 const CustomTextInput = ({ placeholder, height, width }: Props) => {
   return (
     <TextInput
-      placeholderTextColor={Colors.gris}
+      placeholderTextColor={Colors.negro}
       placeholder={placeholder}
       value={''}
-      style={[GlobalStyles.textInput, { height, width }]}
+      style={[GlobalStyles.textInput, { height, width ,fontSize:20}]}
 
     />
 

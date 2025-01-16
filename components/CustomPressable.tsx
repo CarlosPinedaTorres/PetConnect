@@ -11,7 +11,7 @@ interface Props {
 export const Button = ({ label, width, height }: Props) => {
     return (
         <Pressable style={[GlobalStyles.button, { height, width }]}>
-            <Text style={{ color: Colors.blanco, fontSize: 25 }}>{label}</Text>
+            <Text style={{ color: Colors.negro, fontSize: 20 ,fontFamily:"PoppinsBold"}}>{label}</Text>
         </Pressable>
     )
 };
