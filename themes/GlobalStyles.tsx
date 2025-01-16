@@ -63,5 +63,8 @@ export const GlobalStyles = StyleSheet.create({
         textAlign:"center",
         fontSize:20,
         paddingTop:7
+    },
+    fondoBlanco: {
+        backgroundColor: Colors.blanco,
     }
 })
