@@ -3,6 +3,7 @@ import React from 'react'
 import { Colors } from '@/themes/Colors'
 import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Button } from '@/components/CustomPressable'
+import { Link } from 'expo-router'
 const MapaRescate = () => {
   return (
     <View>
@@ -28,9 +29,10 @@ const MapaRescate = () => {
           resizeMode="contain"
           source={require("@/assets/images/location.png")}
         />
-        <Text style={[styles.textoInfoUbi]}>La ubicación se añadirá automáticamente {"\n"}cuando se seleccione en el mapa. </Text>
+        <Text style={[styles.textoInfoUbi]}>La ubicación se añadirá automáticamente cuando se seleccione en el mapa. </Text>
 
       </View>
+
       <View style={[styles.contenedorMensaje]}>
         <TextInput
           placeholder="Describe tu problema..."
@@ -40,8 +42,11 @@ const MapaRescate = () => {
         />
 
       </View>
+      
       <View style={[styles.buttonEnviar]}>
-        <Button label={"Enviar"} width={120} height={40} />
+        
+        <Link href="/drawer/MapaRescate" style={[GlobalStyles.linkButton]}>Enviar</Link>
+
       </View>
 
 
@@ -51,30 +56,33 @@ const MapaRescate = () => {
 }
 const styles = StyleSheet.create({
   mensajeEnviar: {
-    fontSize: 15
+    fontSize: 30,
+    fontFamily:"PoppinsRegular",
+    fontWeight:"regular",
+    padding:15
   },
   buttonEnviar: {
     alignItems: "center",
-    marginTop: 15,
+    marginTop: 35,
 
   },
   contenedorMensaje: {
     backgroundColor: Colors.azulClaro,
-    height: 140,
+    height: 250,
     marginLeft: 20,
     marginRight: 20,
-    marginTop: 20,
+    marginTop: 10,
     borderRadius: 20,
     padding: 10,
 
   },
   locationImage: {
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
 
   },
   textoInfoUbi: {
-    fontSize: 14,
+    fontSize: 23,
     fontFamily: "PoppinsBold",
     paddingRight: 30,
     justifyContent: "center",
@@ -84,13 +92,11 @@ const styles = StyleSheet.create({
   },
   informacionUbicacion: {
     flexDirection: 'row',
-
     backgroundColor: Colors.negro,
     borderRadius: 20,
     alignContent: "center",
     alignItems: "center",
-    marginLeft: 20,
-    marginRight: 20,
+    margin:25
   },
 
   containerInformacion: {
@@ -113,14 +119,14 @@ const styles = StyleSheet.create({
   },
   mapaImage: {
     resizeMode: "contain",
-    width: 350,
-    height: 290,
+    width: 660,
+    height: 500,
   },
   contenedorMapa: {
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 0
+    marginTop: 15
   }
 
 });
