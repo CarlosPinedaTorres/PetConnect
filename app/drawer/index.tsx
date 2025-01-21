@@ -1,11 +1,8 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { Redirect } from 'expo-router'
 import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
-import CustomTextInput from "@/components/CustomTextInput";
-
 
 const ScreenPrincipal = () => {
   return (
@@ -38,7 +35,7 @@ const ScreenPrincipal = () => {
           </View>
           <View style={styles.cuadroIndividual}>
             <Image
-              style={styles.icono}
+              style={[styles.icono]}
               source={require("@/assets/images/adopt me.png")}
             />
             <Text style={styles.textoCuadro}>Refugio de patitas</Text>
@@ -80,48 +77,48 @@ const ScreenPrincipal = () => {
 
 const styles = StyleSheet.create({
   aux: {
-    marginTop: 40,
+    marginTop: 60,
   },
   imagen_perfil: {
-    width: 80,
-    height: 80,
+    width: 120,
+    height: 120,
     marginLeft: 18,
     position: "absolute",
-    top: 10
+    marginTop: 30
   },
   texto_nombre: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 26,
+    fontSize: 48,
     textAlign: 'center',
-    marginRight: 60,
-    marginTop: 20,
+    marginRight: 160,
+    marginTop: 30,
     color: Colors.blanco
   },
   texto_correo: {
     fontFamily: 'WendyOne',
-    fontSize: 16,
+    fontSize: 30,
     textAlign: 'center',
-    marginTop: -3,
-    marginRight: 66,
+    marginTop: -2,
+    marginRight: 160,
     color: Colors.blanco
   },
   seccion: {
     color: Colors.naranjaClaro,
-    marginLeft: 15,
-    marginTop: 10,
+    marginLeft: 25,
+    marginTop: 12,
     textAlign: 'left',
-    fontSize: 30,
+    fontSize: 55,
     fontFamily: 'PoppinsBold'
   },
   cuadrosContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    marginTop: 20,
+    marginTop: 25,
   },
   cuadroIndividual: {
-    width: 120,
-    height: 120,
+    width: 220,
+    height: 220,
     backgroundColor: Colors.naranjaClaro,
     borderRadius: 15,
     justifyContent: 'center',
@@ -129,12 +126,12 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   icono: {
-    width: 50,
-    height: 50,
-    marginBottom: 10,
+    width: 95,
+    height: 95,
+    marginBottom: 15,
   },
   textoCuadro: {
-    fontSize: 15,
+    fontSize: 27,
     fontFamily: 'PoppinsRegular',
     color: Colors.negro,
     textAlign: 'center',
@@ -149,7 +146,7 @@ const styles = StyleSheet.create({
   },
   textoProtectoras: {
     fontFamily: 'PoppinsBold',
-    fontSize: 22,
+    fontSize: 40,
     color: Colors.blanco,
     textAlign: 'center',
     marginBottom: 10,
@@ -161,8 +158,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   imagenProtectora: {
-    width: 165,
-    height: 165,
+    width: 300,
+    height: 300,
     borderRadius: 150,
     marginRight: 20,
     marginLeft: 20,

@@ -1,7 +1,5 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { Redirect } from 'expo-router'
-import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
 

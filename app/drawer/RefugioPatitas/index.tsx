@@ -4,20 +4,19 @@ import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
 
-
 const index = () => {
   return (
     <View style={[GlobalStyles.fondoBlanco, { flex: 1 }]}>
 
       <View style={[styles.header]}>
         <View style={styles.searchContainer}>
-          <Text style={[styles.searchInput, { fontWeight: 'bold', fontSize: 18 }]}>Buscar...</Text>
+          <Text style={[styles.searchInput]}>Buscar...</Text>
           <Image style={[{ width: 35, height: 35 }]} source={require("@/assets/images/lupa2.png")} />
         </View>
       </View>
       <View style={[{ flexDirection: 'row' }]}>
         <Text style={[styles.texto_categoria]}>Categorias</Text>
-        <Text style={[styles.texto_vertodo]}>Ver todo</Text>
+        <Text style={[styles.texto_vertodo,{marginLeft:370}]}>Ver todo</Text>
       </View>
       <View style={[styles.cuadrosContainer]}>
         <View style={[styles.cuadroIndividual]}>
@@ -45,25 +44,25 @@ const index = () => {
       <View style={[styles.animalesContainer]}>
         <View style={[styles.cuadroIndividual2]}>
           <Image
-            style={[{ width: 130, height: 90, borderRadius: 15 }]}
+            style={[{ width: 220, height: 180, borderRadius: 15 }]}
             source={require("@/assets/images/Pluto.png")}
           />
-          <Text style={[{ fontSize: 18, fontWeight: 'bold', marginRight: 85 }]}>Pluto</Text>
-          <Text style={[{ fontSize: 16, marginRight: 12 }]}>Macho, 1.5 años</Text>
+          <Text style={[{ fontSize: 30, fontWeight: 'bold', marginRight: 138 }]}>Pluto</Text>
+          <Text style={[{ fontSize: 26, marginRight:30}]}>Macho, 1.5 años</Text>
           <Image
-            style={[{ marginLeft: 100, width: 22, height: 20,marginTop:12,marginBottom:10 }]}
+            style={[{ marginLeft: 180, width: 35, height: 35,marginTop:28}]}
             source={require("@/assets/images/huella.png")}
           />
         </View>
         <View style={[styles.cuadroIndividual2]}>
           <Image
-            style={[{ width: 130, height: 90, borderRadius: 15 }]}
+            style={[{ width: 220, height:185, borderRadius: 15 }]}
             source={require("@/assets/images/Afro y Shaggy.png")}
           />
-          <Text style={[{ fontSize: 18, fontWeight: 'bold', marginRight: 16 }]}>Afro y Shaggy</Text>
-          <Text style={[{ fontSize: 16, marginRight: 8 }]}>Machos, 3 meses</Text>
+          <Text style={[{ fontSize: 30, fontWeight: 'bold',marginRight:8 }]}>Afro & Shaggy</Text>
+          <Text style={[{ fontSize: 26,marginRight:20}]}>Machos, 3 meses</Text>
           <Image
-            style={[{ marginLeft: 100, width: 35, height: 35,marginTop:7 }]}
+            style={[{ marginLeft: 180, width: 52, height: 52,marginTop:15}]}
             source={require("@/assets/images/megusta_negro.png")}
           />
         </View>
@@ -90,13 +89,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   texto_animales: {
-    fontSize: 18,
+    fontSize: 30,
     color: Colors.blanco,
-    fontWeight: 'bold',
+    fontFamily: 'PoppinsBold',
   },
   texto_categoria: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 16,
+    fontSize: 28,
     textAlign: 'left',
     marginLeft: 30,
     marginTop: 20,
@@ -104,33 +103,30 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   texto_vertodo: {
-    fontFamily: 'PoppinsRegular',
-    fontSize: 16,
-    textAlign: 'right',
+    fontFamily: 'PoppinsBold',
+    fontSize: 28,
     textDecorationLine: 'underline',
-    marginLeft: 210,
+    marginBottom:20,
     marginTop: 20,
     color: Colors.negro,
-    fontWeight: 'bold',
+    
   },
   searchContainer: {
+    width:500,
+    height:90,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Colors.blanco,
     borderRadius: 10,
-    marginTop: 10,
+    marginTop: 30,
     padding: 15,
-    margin: 15,
+    marginBottom:30,
   },
   searchInput: {
     flex: 1,
-    fontSize: 16,
+    fontSize: 30,
     color: Colors.negro,
-  },
-  sectionTitle: {
-    fontSize: 18,
-    color: Colors.colorPrimario,
-    marginBottom: 10,
+    fontWeight:'bold',
   },
   cuadrosContainer: {
     flexDirection: 'row',
@@ -142,19 +138,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    marginTop: 20,
+    marginTop: 40,
   },
   cuadroIndividual: {
-    width: 100,
-    height: 100,
-    backgroundColor: Colors.naranjaClaro,
-    borderRadius: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  cuadroIndividual2: {
-    width: 160,
+    width: 200,
     height: 200,
     backgroundColor: Colors.naranjaClaro,
     borderRadius: 30,
@@ -162,24 +149,35 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20,
   },
+  cuadroIndividual2: {
+    width: 270,
+    height: 360,
+    backgroundColor: Colors.naranjaClaro,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
   textoCuadro: {
-    fontSize: 18,
+    fontSize: 34,
     fontFamily: 'PoppinsRegular',
     color: Colors.negro,
     textAlign: 'center',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginTop:10,
   },
   icono: {
-    width: 60,
-    height: 60,
+    width: 110,
+    height: 110,
   },
   footer: {
     backgroundColor: Colors.colorPrimario,
     padding: 90,
   },
   imagen_animal: {
-    width: 412,
-    height: 60,
+    marginTop:20,
+    width: 720,
+    height: 110,
     alignItems:'center'
     
   },
