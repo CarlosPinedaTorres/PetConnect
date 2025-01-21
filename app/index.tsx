@@ -6,7 +6,7 @@ import { StyleSheet } from "react-native";
 import CustomTextInput from "@/components/CustomTextInput";
 import { Button } from "@/components/CustomPressable";
 import { Link } from "expo-router";
-export default function Index() {
+export default function index() {
 
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>

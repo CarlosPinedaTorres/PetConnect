@@ -3,19 +3,16 @@ import { Colors } from "./Colors"
 export const GlobalStyles = StyleSheet.create({
     drawerTitle:{
         fontFamily:"WendyOne",
-        fontSize:25,
+        fontSize:50,
         color:Colors.blanco,
         textAlign: "center", 
         
     },
     
-    drawer:{ 
+    drawer: { 
         flexDirection: "row", 
         alignItems: "center", 
         justifyContent: "center",
-         flex: 1, 
-         position: "relative",
-         height: 60, 
     },
  
     
@@ -66,5 +63,23 @@ export const GlobalStyles = StyleSheet.create({
     },
     fondoBlanco: {
         backgroundColor: Colors.blanco,
+    },
+    drawerUserContainer:{
+        backgroundColor: 'indigo',
+        justifyContent: 'space-around',
+        marginHorizontal: 0,
+        marginBottom: 30,
+        height: 140,
+        borderRadius: 10,
+        flexDirection:"row",
+        alignItems:"center"
+        
+    },
+    drawerUserImg:{
+        resizeMode:"contain",
+        width: 100, 
+        height: 90, 
+        justifyContent: 'flex-end',
+        borderRadius: 10
     }
 })
