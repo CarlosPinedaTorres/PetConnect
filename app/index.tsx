@@ -6,7 +6,7 @@ import { StyleSheet } from "react-native";
 import CustomTextInput from "@/components/CustomTextInput";
 import { Button } from "@/components/CustomPressable";
 import { Link } from "expo-router";
-export default function Index() {
+export default function index() {
 
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>
@@ -15,8 +15,8 @@ export default function Index() {
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
-      <Text style={[styles.textColor, styles.textMedium, { marginTop: 55 }]}>Bienvenido a</Text>
-      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 50 }]}>PetConnect</Text>
+      <Text style={[styles.textColor, styles.textMedium, { marginTop: 120 }]}>Bienvenido a</Text>
+      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 100 }]}>PetConnect</Text>
       <View style={[styles.containerLogin]}>
 
         <Image
@@ -35,10 +35,7 @@ export default function Index() {
 
 
         <Text
-          style={[{
-            fontFamily: "PoppinsBold",
-            fontSize: 40, color: Colors.colorPrimario, marginTop: 160
-          }]}
+          style={[styles.tituloLogin]}
           numberOfLines={1}
 
         >
@@ -49,16 +46,16 @@ export default function Index() {
           resizeMode="contain"
           source={require("@/assets/images/huellaDer.png")}
         />
-        <View style={[styles.inputText, { marginTop: 30 }]}>
-          <CustomTextInput placeholder="Email" width={350} height={50} />
+        <View style={[styles.inputText, { marginTop: 45 }]}>
+          <CustomTextInput placeholder="Email" width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Contraseña" width={350} height={50} />
+          <CustomTextInput placeholder="Contraseña" width={650} height={100}  />
         </View>
         <View style={styles.buttonContainer}>
-        <Link href="/drawer" style={[GlobalStyles.linkButton]}>Acceder</Link>
+        <Link href="/drawer" style={[GlobalStyles.linkButton,{marginTop:15}]}>Acceder</Link>
 
-          <Link href="/register" style={[styles.registerText, { marginRight: 25, marginTop: 10 }]}>Registrate</Link>
+          <Link href="/register" style={[styles.registerText, { marginRight: 60, marginTop: 20 }]}>Registrate</Link>
 
 
         </View>
@@ -67,7 +64,7 @@ export default function Index() {
       </View>
 
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginLeft: 10 }}>
-        <Text style={[{ fontFamily: "PoppinsBold", color: Colors.blanco }]}>
+        <Text style={[styles.forgetPassword]}>
           ¿Olvidaste la contraseña?
         </Text>
       </View>
@@ -80,30 +77,26 @@ export default function Index() {
 
 }
 const styles = StyleSheet.create({
-  huellaDer: {
-    position: "absolute",
-    right: 15,
-    top: 210
+  forgetPassword:{
+     fontFamily: "PoppinsBold",
+     color: Colors.blanco,
+     fontSize:30
+  }
+  ,
 
-  },
-  huellaIzq: {
-    position: "absolute",
-    left: 15,
-    top: 150
-
-  },
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginLeft: 20,
+    marginLeft: 40,
 
   },
 
 
   registerText: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 16,
+    fontWeight:"regular",
+    fontSize: 30,
     textAlign: 'right',
     textDecorationLine: 'underline',
     color: Colors.colorPrimario,
@@ -111,18 +104,40 @@ const styles = StyleSheet.create({
   },
   imageLogin: {
     width: 500,
-    height: 230,
+    height: 330,
     position: "absolute",
-    top: -45
+    top: -80
 
   },
   containerLogin: {
     backgroundColor: Colors.blanco,
     padding: 16,
     borderRadius: 40,
-    alignContent: "center",
-    alignItems: "center",
-    height: 470,
+    alignItems: "center", 
+    width: "100%",       
+    maxWidth: 720,     
+    height: 850, 
+
+  },
+  tituloLogin:{
+    fontFamily: "PoppinsBold",
+    fontSize: 60, 
+    color: Colors.colorPrimario, 
+    marginTop: 270,
+    width:"100%",
+    textAlign:"center",
+    
+  },
+  huellaDer: {
+    position: "absolute",
+    right: 30,
+    top: 350
+
+  },
+  huellaIzq: {
+    position: "absolute",
+    left: 30,
+    top: 250
 
   },
   textColor: {
@@ -132,16 +147,20 @@ const styles = StyleSheet.create({
 
   },
   textMedium: {
-    fontSize: 30,
+    fontSize: 50,
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
+    textAlign: "center", 
+    width: "100%",  
   },
   textLarge: {
     fontFamily: "WendyOne",
-    fontSize: 60,
+    fontSize: 100,
     fontWeight: "regular",
     marginBottom: 20,
+    textAlign: "center", 
+    width: "100%", 
   },
   inputText: {
     margin: 10

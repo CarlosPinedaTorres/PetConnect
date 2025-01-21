@@ -3,19 +3,16 @@ import { Colors } from "./Colors"
 export const GlobalStyles = StyleSheet.create({
     drawerTitle:{
         fontFamily:"WendyOne",
-        fontSize:25,
+        fontSize:50,
         color:Colors.blanco,
         textAlign: "center", 
         
     },
     
-    drawer:{ 
+    drawer: { 
         flexDirection: "row", 
         alignItems: "center", 
         justifyContent: "center",
-         flex: 1, 
-         position: "relative",
-         height: 60, 
     },
  
     
@@ -35,25 +32,33 @@ export const GlobalStyles = StyleSheet.create({
         fontFamily: " PoppinsRegular",
         color: Colors.colorPrimario
     },
+    textInput2: {
+        backgroundColor: Colors.blanco,
+        borderRadius: 10,
+        justifyContent: "center",
+        paddingLeft: 20,
+        fontFamily: " PoppinsBold",
+        color: Colors.negro,
+    },
     logoLogin: {
-        width: 60,
-        height: 60,
+        width: 90,
+        height: 90,
         position: "absolute",
-        right: 20,
-        top: 5
+        right:40,
+        top:10
 
     },
   
     huellas: {
-        width: 40,
-        height: 40,
+        width: 70,
+        height:70,
     },
     fondoAzul: {
         backgroundColor: Colors.colorPrimario,
     },
     linkButton:{
-        width:120,
-        height:40,
+        width:200,
+        height:70,
         backgroundColor: Colors.naranjaClaro,
         color: Colors.negro,
         borderRadius: 50,
@@ -61,10 +66,28 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
         fontFamily: "PoppinsBold",
         textAlign:"center",
-        fontSize:20,
-        paddingTop:7
+        fontSize:30,
+        paddingTop:12,
     },
     fondoBlanco: {
         backgroundColor: Colors.blanco,
+    },
+    drawerUserContainer:{
+        backgroundColor: 'indigo',
+        justifyContent: 'space-around',
+        marginHorizontal: 0,
+        marginBottom: 30,
+        height: 140,
+        borderRadius: 10,
+        flexDirection:"row",
+        alignItems:"center"
+        
+    },
+    drawerUserImg:{
+        resizeMode:"contain",
+        width: 100, 
+        height: 90, 
+        justifyContent: 'flex-end',
+        borderRadius: 10
     }
 })

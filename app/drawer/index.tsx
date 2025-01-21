@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   seccion: {
     color: Colors.naranjaClaro,
     marginLeft: 25,
-    marginTop: 12,
+    marginTop: 22,
     textAlign: 'left',
     fontSize: 55,
     fontFamily: 'PoppinsBold'
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 30,
   },
   icono: {
     width: 95,
@@ -150,10 +150,10 @@ const styles = StyleSheet.create({
     color: Colors.blanco,
     textAlign: 'center',
     marginBottom: 10,
-    marginTop: 15,
+    marginTop: 25,
   },
   imagenesProtectoras: {
-    marginTop: 25,
+    marginTop: 35,
     flexDirection: 'row',
     justifyContent: 'space-around',
   },

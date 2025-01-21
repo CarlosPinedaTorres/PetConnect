@@ -3,16 +3,25 @@ import { View, Text, Image } from 'react-native'
 import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
+import { TextInput } from 'react-native-gesture-handler';
 
 const index = () => {
   return (
     <View style={[GlobalStyles.fondoBlanco, { flex: 1 }]}>
 
       <View style={[styles.header]}>
-        <View style={styles.searchContainer}>
-          <Text style={[styles.searchInput]}>Buscar...</Text>
-          <Image style={[{ width: 35, height: 35 }]} source={require("@/assets/images/lupa2.png")} />
+        <View style={[styles.searchContainer]}>
+          <TextInput
+            placeholderTextColor={Colors.negro}
+            placeholder={'Buscar...'}
+            value={''}
+            style={[GlobalStyles.textInput2, { height: 60, width: 340, fontSize: 30 }]}
+          />
         </View>
+        <Image
+          style={[{ position: 'absolute', width: 60, height: 60, left: 560 }]}
+          source={require("@/assets/images/lupa2.png")}
+        />
       </View>
       <View style={[{ flexDirection: 'row' }]}>
         <Text style={[styles.texto_categoria]}>Categorias</Text>
@@ -112,7 +121,7 @@ const styles = StyleSheet.create({
     
   },
   searchContainer: {
-    width:500,
+    width:580,
     height:90,
     flexDirection: 'row',
     alignItems: 'center',
@@ -175,9 +184,9 @@ const styles = StyleSheet.create({
     padding: 90,
   },
   imagen_animal: {
-    marginTop:20,
+    marginTop:18,
     width: 720,
-    height: 110,
+    height: 105,
     alignItems:'center'
     
   },
