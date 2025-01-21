@@ -135,8 +135,8 @@ const styles = StyleSheet.create({
     justifyContent:'space-between'
   },
   cuadroIndividual: {
-    width:100,
-    height:90,
+    width:90,
+    height:65,
     backgroundColor: Colors.blanco,
     borderRadius: 30,
     justifyContent: 'center',

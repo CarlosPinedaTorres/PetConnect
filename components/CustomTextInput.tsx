@@ -9,11 +9,12 @@ interface Props {
 }
 const CustomTextInput = ({ placeholder, height, width }: Props) => {
   return (
+    
     <TextInput
       placeholderTextColor={Colors.negro}
       placeholder={placeholder}
       value={''}
-      style={[GlobalStyles.textInput, { height, width ,fontSize:20}]}
+      style={[GlobalStyles.textInput, { height, width ,fontSize:30,fontFamily:"PoppinsRegular",fontWeight:"regular"}]}
 
     />
 

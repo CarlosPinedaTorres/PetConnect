@@ -36,24 +36,24 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.colorPrimario
     },
     logoLogin: {
-        width: 60,
-        height: 60,
+        width: 90,
+        height: 90,
         position: "absolute",
-        right: 20,
-        top: 5
+        right:40,
+        top:10
 
     },
   
     huellas: {
-        width: 40,
-        height: 40,
+        width: 70,
+        height:70,
     },
     fondoAzul: {
         backgroundColor: Colors.colorPrimario,
     },
     linkButton:{
-        width:120,
-        height:40,
+        width:200,
+        height:70,
         backgroundColor: Colors.naranjaClaro,
         color: Colors.negro,
         borderRadius: 50,
@@ -61,8 +61,8 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
         fontFamily: "PoppinsBold",
         textAlign:"center",
-        fontSize:20,
-        paddingTop:7
+        fontSize:30,
+        paddingTop:12,
     },
     fondoBlanco: {
         backgroundColor: Colors.blanco,
