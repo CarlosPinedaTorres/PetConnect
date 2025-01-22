@@ -73,6 +73,7 @@ const Mascota = () => {
 
 const styles = StyleSheet.create({
   fondo:{
+    flex:1,
     backgroundColor: Colors.blanco,
     alignItems: 'center',
   },
