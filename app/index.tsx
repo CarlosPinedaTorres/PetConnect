@@ -50,10 +50,10 @@ export default function index() {
           <CustomTextInput placeholder="Email" width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Contraseña" width={650} height={100}  />
+          <CustomTextInput placeholder="Contraseña" width={650} height={100} />
         </View>
         <View style={styles.buttonContainer}>
-        <Link href="/drawer" style={[GlobalStyles.linkButton,{marginTop:15}]}>Acceder</Link>
+          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 15 }]}>Acceder</Link>
 
           <Link href="/register" style={[styles.registerText, { marginRight: 60, marginTop: 20 }]}>Registrate</Link>
 
@@ -77,10 +77,11 @@ export default function index() {
 
 }
 const styles = StyleSheet.create({
-  forgetPassword:{
-     fontFamily: "PoppinsBold",
-     color: Colors.blanco,
-     fontSize:30
+  forgetPassword: {
+    fontFamily: "PoppinsBold",
+    color: Colors.blanco,
+    fontSize: 30,
+    textDecorationLine: 'underline',
   }
   ,
 
@@ -95,7 +96,7 @@ const styles = StyleSheet.create({
 
   registerText: {
     fontFamily: 'PoppinsRegular',
-    fontWeight:"regular",
+    fontWeight: "regular",
     fontSize: 30,
     textAlign: 'right',
     textDecorationLine: 'underline',
@@ -113,20 +114,20 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.blanco,
     padding: 16,
     borderRadius: 40,
-    alignItems: "center", 
-    width: "100%",       
-    maxWidth: 720,     
-    height: 850, 
+    alignItems: "center",
+    width: "100%",
+    maxWidth: 720,
+    height: 850,
 
   },
-  tituloLogin:{
+  tituloLogin: {
     fontFamily: "PoppinsBold",
-    fontSize: 60, 
-    color: Colors.colorPrimario, 
+    fontSize: 60,
+    color: Colors.colorPrimario,
     marginTop: 270,
-    width:"100%",
-    textAlign:"center",
-    
+    width: "100%",
+    textAlign: "center",
+
   },
   huellaDer: {
     position: "absolute",
@@ -151,16 +152,16 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
-    textAlign: "center", 
-    width: "100%",  
+    textAlign: "center",
+    width: "100%",
   },
   textLarge: {
     fontFamily: "WendyOne",
     fontSize: 100,
     fontWeight: "regular",
     marginBottom: 20,
-    textAlign: "center", 
-    width: "100%", 
+    textAlign: "center",
+    width: "100%",
   },
   inputText: {
     margin: 10

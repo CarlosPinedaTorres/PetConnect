@@ -14,8 +14,8 @@ const register = () => {
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
-      <Text style={[styles.textColor, styles.textMedium, { marginTop: 55 }]}>Bienvenido a</Text>
-      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 140 }]}>PetConnect</Text>
+      <Text style={[styles.textColor, styles.textMedium, { marginTop: 120 }]}>Bienvenido a</Text>
+      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 100 }]}>PetConnect</Text>
       <Image
         style={[styles.animalesRegister]}
         resizeMode="contain"
@@ -30,14 +30,10 @@ const register = () => {
           source={require("@/assets/images/huellaIzq.png")}
         />
 
-
-
-
         <Text
-          style={[{
-            fontFamily: "PoppinsBold",
-            fontSize: 30, color: Colors.colorPrimario
-          ,marginTop:25,marginBottom:25}]}
+          style={[
+            styles.titulo
+          ]}
           numberOfLines={1}
 
         >
@@ -49,28 +45,28 @@ const register = () => {
           source={require("@/assets/images/huellaDer.png")}
         />
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Nombre" width={340} height={50} />
+          <CustomTextInput placeholder="Nombre" width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Email" width={340} height={50} />
+          <CustomTextInput placeholder="Email" width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Contraseña' width={340} height={50} />
+          <CustomTextInput placeholder='Contraseña' width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Repetir contraseña' width={340} height={50} />
+          <CustomTextInput placeholder='Repetir contraseña' width={650} height={100} />
         </View>
         <View style={styles.buttonContainer}>
-          <Button label="Registrate" width={120} height={40} />
-          <Link href="/" style={[GlobalStyles.linkButton,{marginRight: 25}]}>Cancelar</Link>
+          <Link href="/" style={[GlobalStyles.linkButton, { marginRight: 25, marginTop: 25 }]}>Registrate</Link>
+          <Link href="/" style={[GlobalStyles.linkButton, { marginRight: 35, marginTop: 25 }]}>Cancelar</Link>
         </View>
 
 
       </View>
       <View style={styles.buttonContainer}>
-          <Text style={[styles.textCuenta]}> ¿Tienes ya una cuenta?</Text>
-          <Link href="/" style={[styles.loginText]}>Accede al refugio</Link>
-        </View>
+        <Text style={[styles.textCuenta]}> ¿Tienes ya una cuenta?</Text>
+        <Link href="/" style={[styles.loginText]}>Accede al refugio</Link>
+      </View>
 
 
     </View>
@@ -78,17 +74,26 @@ const register = () => {
 }
 
 const styles = StyleSheet.create({
+
+  titulo: {
+    fontFamily: "PoppinsBold",
+    fontSize: 50,
+    color: Colors.colorPrimario,
+    marginTop: 45,
+    marginBottom: 55
+  },
   animalesRegister: {
     position: "absolute",
-    width: 200,
-    height: 200,
-    left:100,
-    top:120
+    width: 350,
+    height: 270,
+    left: 190,
+    top: 147,
+    marginTop: 100
   },
   huellaDer: {
     position: "absolute",
     right: 15,
-    top: 70
+    top: 120
 
   },
   huellaIzq: {
@@ -101,44 +106,39 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginLeft: 20,
-   
+    marginLeft: 35,
+
 
   },
 
 
   loginText: {
     fontFamily: 'PoppinsBold',
-    fontSize: 16,
+    fontSize: 30,
     textDecorationLine: 'underline',
     color: Colors.blanco,
-    marginRight:50,
-    paddingTop:10
-   
+    marginRight: 50,
+    paddingTop: 10
+
 
   },
   textCuenta: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 16,
+    fontSize: 30,
     textAlign: 'left',
     color: Colors.blanco,
-    paddingTop:10
-
-  },
-  imageLogin: {
-    width: 500,
-    height: 230,
-    position: "absolute",
-    top: -45
+    paddingTop: 10
 
   },
   containerRegister: {
     backgroundColor: Colors.blanco,
     padding: 16,
     borderRadius: 40,
-    alignContent: "center",
     alignItems: "center",
-    height: 440,
+    width: "100%",
+    maxWidth: 720,
+    height: 850,
+    marginTop: 100
 
   },
   textColor: {
@@ -148,16 +148,20 @@ const styles = StyleSheet.create({
 
   },
   textMedium: {
-    fontSize: 30,
+    fontSize: 50,
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
+    textAlign: "center",
+    width: "100%",
   },
   textLarge: {
     fontFamily: "WendyOne",
-    fontSize: 60,
+    fontSize: 100,
     fontWeight: "regular",
     marginBottom: 20,
+    textAlign: "center",
+    width: "100%",
   },
   inputText: {
     margin: 10
