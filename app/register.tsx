@@ -5,8 +5,23 @@ import { Button } from '@/components/CustomPressable'
 import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from '@/themes/Colors'
 import { Link } from 'expo-router'
+import { useState } from 'react'
 
 const register = () => {
+  const [dataUser, setdataUser] = useState({
+    nombre:"",
+    email:"",
+    password:"",
+    repeatPassword:"",
+  })
+
+  const changeDataUser=(dato:"nombre"|"email"|"password"|"repeatPassword",value:string)=>{
+    setdataUser((prevState)=>({
+      ...prevState,
+      [dato]:value
+    }))
+  }
+
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>
       <Image
@@ -45,16 +60,16 @@ const register = () => {
           source={require("@/assets/images/huellaDer.png")}
         />
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Nombre" width={650} height={100} />
+          <CustomTextInput placeholder="Nombre" value={dataUser.nombre}  onChangeText={(value)=>changeDataUser("nombre",value)} type={"nombre"}  width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Email" width={650} height={100} />
+          <CustomTextInput placeholder="Email"  value={dataUser.email}  onChangeText={(value)=>changeDataUser("email",value)} type={"email"}  width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Contraseña' width={650} height={100} />
+          <CustomTextInput placeholder='Contraseña' value={dataUser.password}  onChangeText={(value)=>changeDataUser("password",value)} type={"password"}   width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Repetir contraseña' width={650} height={100} />
+          <CustomTextInput placeholder='Repetir contraseña' value={dataUser.repeatPassword}  onChangeText={(value)=>changeDataUser("repeatPassword",value)} type={"repeatPassword"}  width={650} height={100} />
         </View>
         <View style={styles.buttonContainer}>
           <Link href="/" style={[GlobalStyles.linkButton, { marginRight: 25, marginTop: 25 }]}>Registrate</Link>

@@ -4,8 +4,12 @@ import { GlobalStyles } from '@/themes/GlobalStyles'
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
 import { TextInput } from 'react-native-gesture-handler';
-
+import { useState } from 'react';
 const index = () => {
+  const [nameAnimal, setNameAnimal] = useState("")
+  const buscarAnimal=(value:string)=>{
+      setNameAnimal(value)
+  }
   return (
     <View style={[GlobalStyles.fondoBlanco, { flex: 1 }]}>
 
@@ -14,7 +18,8 @@ const index = () => {
           <TextInput
             placeholderTextColor={Colors.negro}
             placeholder={'Buscar...'}
-            value={''}
+            value={nameAnimal}
+            onChangeText={(value)=>buscarAnimal(value)}
             style={[GlobalStyles.textInput2, { height: 60, width: 340, fontSize: 30 }]}
           />
         </View>

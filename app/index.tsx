@@ -1,5 +1,6 @@
 
 import { GlobalStyles } from "@/themes/GlobalStyles";
+import { useState } from "react";
 import { View, Text, Image } from "react-native";
 import { Colors } from "@/themes/Colors";
 import { StyleSheet } from "react-native";
@@ -7,6 +8,18 @@ import CustomTextInput from "@/components/CustomTextInput";
 import { Button } from "@/components/CustomPressable";
 import { Link } from "expo-router";
 export default function index() {
+
+    const [dataUser, setdataUser] = useState({
+      email:"",
+      password:""
+    })
+
+    const userDataChange=(dato:"email"| "password",value:string)=>{
+        setdataUser((prevState)=>({
+          ...prevState,
+          [dato]:value,
+        }))
+    }
 
   return (
     <View style={[GlobalStyles.fondoAzul, { flex: 1 }]}>
@@ -47,10 +60,10 @@ export default function index() {
           source={require("@/assets/images/huellaDer.png")}
         />
         <View style={[styles.inputText, { marginTop: 45 }]}>
-          <CustomTextInput placeholder="Email" width={650} height={100} />
+          <CustomTextInput placeholder="Email" type="email" onChangeText={(value) => userDataChange("email", value)} value={dataUser.email} width={650} height={100} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Contraseña" width={650} height={100} />
+          <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={650} height={100} />
         </View>
         <View style={styles.buttonContainer}>
           <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 15 }]}>Acceder</Link>
