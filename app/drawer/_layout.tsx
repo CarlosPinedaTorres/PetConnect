@@ -12,11 +12,20 @@ const LayoutDrawer = () => {
 
     screenOptions={{
       overlayColor: 'rgba(0,0,0,0.4)',
-      drawerInactiveTintColor: 'black',
-      drawerActiveBackgroundColor: Colors.colorPrimario,
-      drawerActiveTintColor: 'white',
+      drawerInactiveTintColor: Colors.negro,
+      drawerActiveBackgroundColor: Colors.blanco,
+      drawerActiveTintColor: Colors.negro,
       drawerItemStyle: {
-        borderRadius: 10
+        borderRadius: 10,
+        backgroundColor: Colors.blanco,
+        marginTop: 30
+      },
+      drawerStyle: {
+        backgroundColor: Colors.colorPrimario
+      },
+      drawerLabelStyle: {
+        fontFamily: "PoppinsBold",
+        fontSize: 25
       },
       headerLeft: (_props) => (
         <View style={[styles.inconMenu]}>

@@ -42,9 +42,9 @@ const MapaRescate = () => {
         />
 
       </View>
-      
+
       <View style={[styles.buttonEnviar]}>
-        
+
         <Link href="/drawer/MapaRescate" style={[GlobalStyles.linkButton]}>Enviar</Link>
 
       </View>
@@ -57,9 +57,9 @@ const MapaRescate = () => {
 const styles = StyleSheet.create({
   mensajeEnviar: {
     fontSize: 30,
-    fontFamily:"PoppinsRegular",
-    fontWeight:"regular",
-    padding:15
+    fontFamily: "PoppinsRegular",
+    fontWeight: "regular",
+    padding: 15
   },
   buttonEnviar: {
     alignItems: "center",
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignContent: "center",
     alignItems: "center",
-    margin:25
+    margin: 25
   },
 
   containerInformacion: {
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: "PoppinsRegular",
     color: Colors.negro,
-    fontWeight:"regular"
+    fontWeight: "regular"
   },
   mapaImage: {
     resizeMode: "contain",
