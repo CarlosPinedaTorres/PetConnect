@@ -26,16 +26,31 @@ const ComunidadAnimal = () => {
 
       <View style={[styles.containerTituloDiscusion]}>
         <Text style={[styles.tituloDiscusion]}>TEMAS DE DISCUSIÓN </Text>
+
       </View>
       <View style={[styles.containerTemas]}>
         <View style={[styles.cajaTemaDiscusion]}>
           <Text style={[styles.textCaja]}>Guías de alimentación B.A.R.F. para tu animal.</Text>
+          <View style={styles.mensajesContainer}>
+            <Image source={require("@/assets/images/mensaje.png")} style={styles.iconoMensaje} />
+            <Text style={styles.textoMensajes}>21</Text>
+          </View>
         </View>
         <View style={[styles.cajaTemaDiscusion]}>
           <Text style={[styles.textCaja]}>Consejos para sobrellevar la ola de calor con tu mascota</Text>
+          <View style={styles.mensajesContainer}>
+            <Image source={require("@/assets/images/mensaje.png")} style={styles.iconoMensaje} />
+            <Text style={styles.textoMensajes}>45</Text>
+          </View>
+
         </View>
         <View style={[styles.cajaTemaDiscusion]}>
           <Text style={[styles.textCaja]}>Como empezar a adiestrar a tu mascota</Text>
+          <View style={styles.mensajesContainer}>
+            <Image source={require("@/assets/images/mensaje.png")} style={styles.iconoMensaje} />
+            <Text style={styles.textoMensajes}>45</Text>
+          </View>
+
         </View>
       </View>
       <View style={[styles.buttonEnviar]}>
@@ -102,11 +117,32 @@ const styles = StyleSheet.create({
   textBlack: {
     color: Colors.negro
   },
+  mensajesContainer: {
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  iconoMensaje: {
+    width: 50,
+    height: 50,
+    marginRight: 5,
+  },
+
+  textoMensajes: {
+    fontSize: 30,
+    color: Colors.colorPrimario,
+    fontFamily:"PoppinsBold"
+  },
   cajaTemaDiscusion: {
     backgroundColor: Colors.azulClaro,
     height: 170,
     marginTop: 40,
     marginBottom: 10,
+    padding: 15,
+    position: 'relative',
   },
   textCaja: {
     color: Colors.negro,
