@@ -3,7 +3,7 @@ import { Colors } from "./Colors"
 export const GlobalStyles = StyleSheet.create({
     drawerTitle:{
         fontFamily:"WendyOne",
-        fontSize:50,
+        fontSize:25,
         color:Colors.blanco,
         textAlign: "center", 
         
@@ -41,24 +41,24 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.negro,
     },
     logoLogin: {
-        width: 90,
-        height: 90,
+        width: 60,
+        height: 60,
         position: "absolute",
-        right:40,
-        top:10
+        right:20,
+        top:5
 
     },
   
     huellas: {
-        width: 70,
-        height:70,
+        width: 40,
+        height:40,
     },
     fondoAzul: {
         backgroundColor: Colors.colorPrimario,
     },
     linkButton:{
-        width:200,
-        height:70,
+        width:120,
+        height:40,
         backgroundColor: Colors.naranjaClaro,
         color: Colors.negro,
         borderRadius: 50,
@@ -66,8 +66,8 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
         fontFamily: "PoppinsBold",
         textAlign:"center",
-        fontSize:30,
-        paddingTop:12,
+        fontSize:20,
+        paddingTop:6,
     },
     fondoBlanco: {
         backgroundColor: Colors.blanco,

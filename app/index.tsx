@@ -28,8 +28,8 @@ export default function index() {
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
-      <Text style={[styles.textColor, styles.textMedium, { marginTop: 120 }]}>Bienvenido a</Text>
-      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 100 }]}>PetConnect</Text>
+      <Text style={[styles.textColor, styles.textMedium, { marginTop: 55 }]}>Bienvenido a</Text>
+      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 50 }]}>PetConnect</Text>
       <View style={[styles.containerLogin]}>
 
         <Image
@@ -59,16 +59,16 @@ export default function index() {
           resizeMode="contain"
           source={require("@/assets/images/huellaDer.png")}
         />
-        <View style={[styles.inputText, { marginTop: 45 }]}>
-          <CustomTextInput placeholder="Email" type="email" onChangeText={(value) => userDataChange("email", value)} value={dataUser.email} width={650} height={100} />
+        <View style={[styles.inputText, { marginTop: 30 }]}>
+          <CustomTextInput placeholder="Email" type="email" onChangeText={(value) => userDataChange("email", value)} value={dataUser.email} width={350} height={50} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={650} height={100} />
+          <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={350} height={50} />
         </View>
         <View style={styles.buttonContainer}>
-          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 15 }]}>Acceder</Link>
+          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 5 }]}>Acceder</Link>
 
-          <Link href="/register" style={[styles.registerText, { marginRight: 60, marginTop: 20 }]}>Registrate</Link>
+          <Link href="/register" style={[styles.registerText, { marginRight: 25, marginTop: 10 }]}>Registrate</Link>
 
 
         </View>
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   forgetPassword: {
     fontFamily: "PoppinsBold",
     color: Colors.blanco,
-    fontSize: 30,
+    fontSize: 20,
     textDecorationLine: 'underline',
   }
   ,
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginLeft: 40,
+    marginLeft: 20,
 
   },
 
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   registerText: {
     fontFamily: 'PoppinsRegular',
     fontWeight: "regular",
-    fontSize: 30,
+    fontSize: 16,
     textAlign: 'right',
     textDecorationLine: 'underline',
     color: Colors.colorPrimario,
@@ -118,9 +118,9 @@ const styles = StyleSheet.create({
   },
   imageLogin: {
     width: 500,
-    height: 330,
+    height: 230,
     position: "absolute",
-    top: -80
+    top: -45
 
   },
   containerLogin: {
@@ -130,28 +130,28 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     maxWidth: 720,
-    height: 850,
+    height: 470,
 
   },
   tituloLogin: {
     fontFamily: "PoppinsBold",
-    fontSize: 60,
+    fontSize: 40,
     color: Colors.colorPrimario,
-    marginTop: 270,
+    marginTop: 160,
     width: "100%",
     textAlign: "center",
 
   },
   huellaDer: {
     position: "absolute",
-    right: 30,
-    top: 350
+    right: 15,
+    top: 210
 
   },
   huellaIzq: {
     position: "absolute",
-    left: 30,
-    top: 250
+    left: 15,
+    top: 150
 
   },
   textColor: {
@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
 
   },
   textMedium: {
-    fontSize: 50,
+    fontSize: 30,
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
   textLarge: {
     fontFamily: "WendyOne",
-    fontSize: 100,
+    fontSize: 60,
     fontWeight: "regular",
     marginBottom: 20,
     textAlign: "center",

@@ -19,7 +19,7 @@ const CustomTextInput = ({ placeholder, height, width,value,type ,onChangeText}:
       placeholder={placeholder}
       value={value}
       secureTextEntry={type==="password"|| type==="repeatPassword"}
-      style={[GlobalStyles.textInput, { height, width ,fontSize:30,fontFamily:"PoppinsRegular",fontWeight:"regular"}]}
+      style={[GlobalStyles.textInput, { height, width ,fontSize:20,fontFamily:"PoppinsRegular",fontWeight:"regular"}]}
 
     />
 

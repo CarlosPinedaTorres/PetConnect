@@ -180,29 +180,29 @@ const styles = StyleSheet.create({
 
   inconMenu: {
     paddingLeft: 25,
-    transform: [{ scale: 2.5 }],
+    transform: [{ scale: 1.5 }],
   },
 
   logoDrawerMain: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     position: "absolute",
-    right: -175,
+    right: -135,
   },
 
 
   logoDrawerPatitas: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     position: "absolute",
-    right: -95,
+    right: -75,
   },
 
   logoDrawerPerros: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     position: "absolute",
-    right: -230,
+    right: -170,
   },
 
 })
