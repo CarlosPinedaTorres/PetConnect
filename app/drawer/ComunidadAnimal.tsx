@@ -67,7 +67,7 @@ const ComunidadAnimal = () => {
 const styles = StyleSheet.create({
   buttonEnviar: {
     alignItems: "center",
-    marginTop: 35,
+    marginTop: 25,
 
   },
   containerTemas: {
@@ -80,10 +80,10 @@ const styles = StyleSheet.create({
   tituloDiscusion: {
     color: Colors.colorPrimario,
     fontFamily: "PoppinsBold",
-    fontSize: 30,
+    fontSize: 25,
   },
   textInfo: {
-    fontSize: 30,
+    fontSize: 15,
     fontFamily: "PoppinsRegular",
     fontWeight: "regular",
     paddingLeft: 15
@@ -91,25 +91,26 @@ const styles = StyleSheet.create({
 
   informacion: {
     backgroundColor: Colors.naranjaClaro,
-    margin: 20,
     borderRadius: 50,
-    width: 680,
-    height: 350,
+    margin:20,
+    width: 440,
+    height: 220,
   },
   titleInfo: {
-    fontSize: 30,
+    fontSize: 20,
     fontFamily: "PoppinsBold",
     alignContent: "center",
     justifyContent: "center",
-    color: Colors.colorPrimario
+    color: Colors.colorPrimario,
+    paddingTop:5
   },
   imageTitleInfo: {
     flexDirection: "row",
     padding: 20
   },
   imageInformacion: {
-    width: 100,
-    height: 80,
+    width: 60,
+    height: 50,
   },
   textBlue: {
     color: Colors.colorPrimario
@@ -126,29 +127,28 @@ const styles = StyleSheet.create({
   },
 
   iconoMensaje: {
-    width: 50,
-    height: 50,
+    width: 25,
+    height: 25,
     marginRight: 5,
   },
 
   textoMensajes: {
-    fontSize: 30,
+    fontSize: 20,
     color: Colors.colorPrimario,
     fontFamily:"PoppinsBold"
   },
   cajaTemaDiscusion: {
     backgroundColor: Colors.azulClaro,
-    height: 170,
-    marginTop: 40,
-    marginBottom: 10,
-    padding: 15,
+    height: 100,
+    marginTop: 30,
+    marginBottom: 5,
     position: 'relative',
   },
   textCaja: {
     color: Colors.negro,
     fontFamily: "PoppinsBold",
     padding: 20,
-    fontSize: 30,
+    fontSize: 20,
 
 
   },

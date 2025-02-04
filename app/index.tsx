@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   registerText: {
     fontFamily: 'PoppinsRegular',
     fontWeight: "regular",
-    fontSize: 16,
+    fontSize: 15,
     textAlign: 'right',
     textDecorationLine: 'underline',
     color: Colors.colorPrimario,
