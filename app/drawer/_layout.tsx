@@ -55,7 +55,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 120,
+          height: 100,
 
         },
 
@@ -86,7 +86,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 120,
+          height: 100,
         },
       }}
     />
@@ -112,7 +112,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 120,
+          height: 100,
         },
       }}
     />
@@ -137,7 +137,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 120,
+          height: 100,
         },
       }}
     />
@@ -163,7 +163,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 120,
+          height: 100,
         },
       }}
     />

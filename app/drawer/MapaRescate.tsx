@@ -56,33 +56,32 @@ const MapaRescate = () => {
 }
 const styles = StyleSheet.create({
   mensajeEnviar: {
-    fontSize: 30,
+    fontSize: 15,
     fontFamily: "PoppinsRegular",
     fontWeight: "regular",
     padding: 15
   },
   buttonEnviar: {
     alignItems: "center",
-    marginTop: 35,
+    marginTop: 15,
 
   },
   contenedorMensaje: {
     backgroundColor: Colors.azulClaro,
-    height: 250,
+    height: 150,
     marginLeft: 20,
     marginRight: 20,
-    marginTop: 10,
     borderRadius: 20,
     padding: 10,
 
   },
   locationImage: {
-    width: 80,
-    height: 80,
+    width: 50,
+    height: 50,
 
   },
   textoInfoUbi: {
-    fontSize: 23,
+    fontSize: 15,
     fontFamily: "PoppinsBold",
     paddingRight: 30,
     justifyContent: "center",
@@ -105,28 +104,27 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 25,
     marginRight: 25,
-    height: 224,
+    height: 100,
 
   },
 
   textoInformacion: {
     padding: 20,
     justifyContent: "flex-end",
-    fontSize: 30,
+    fontSize: 15,
     fontFamily: "PoppinsRegular",
     color: Colors.negro,
     fontWeight: "regular"
   },
   mapaImage: {
     resizeMode: "contain",
-    width: 660,
-    height: 500,
+    width: 430,
+    height: 350,
   },
   contenedorMapa: {
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
-    marginTop: 15
   }
 
 });
