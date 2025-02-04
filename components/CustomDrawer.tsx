@@ -48,7 +48,7 @@ const CustomDrawer = (props: DrawerContentComponentProps) => {
 const styles = StyleSheet.create({
   textLinkStyle: {
     fontFamily: "PoppinsBold",
-    fontSize: 25
+    fontSize: 15
   },
 
   linkStyle: {
@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
   },
   iconLogout: {
     marginTop: 5,
-    width: 30,
-    height: 30,
+    width: 20,
+    height: 20,
     marginLeft: 20,
   },
   botonLogout: {
@@ -73,14 +73,15 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     position: "absolute",
     bottom: 30,
+    marginLeft:10
 
 
   },
   perfilContain: {
-    marginBottom: 60,
+    marginBottom: 30,
     marginTop: 30,
     backgroundColor: Colors.blanco,
-    height: 150,
+    height: 100,
     borderRadius: 25
   },
   drawerContainer: {
@@ -88,26 +89,26 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.colorPrimario
   },
   imagen_perfil: {
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 70,
     marginLeft: 18,
     position: "absolute",
     top: 15
   },
   texto_nombre: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 36,
+    fontSize: 26,
     textAlign: 'center',
-    marginLeft: 80,
+    marginLeft: 10,
     marginTop: 20,
     color: Colors.negro
   },
   texto_correo: {
     fontFamily: 'WendyOne',
-    fontSize: 26,
+    fontSize: 15,
     textAlign: 'center',
     marginTop: -3,
-    marginLeft: 80,
+    marginLeft: 10,
     color: Colors.negro
   },
 })

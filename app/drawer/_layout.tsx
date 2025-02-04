@@ -25,7 +25,7 @@ const LayoutDrawer = () => {
       },
       drawerLabelStyle: {
         fontFamily: "PoppinsBold",
-        fontSize: 25
+        fontSize: 15
       },
       headerLeft: (_props) => (
         <View style={[styles.inconMenu]}>

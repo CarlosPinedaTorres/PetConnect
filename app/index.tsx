@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     maxWidth: 720,
-    height: 470,
+    height: 490,
 
   },
   tituloLogin: {
