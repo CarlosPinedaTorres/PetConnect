@@ -66,9 +66,9 @@ export default function index() {
           <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={350} height={50} />
         </View>
         <View style={styles.buttonContainer}>
-          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 5 }]}>Acceder</Link>
+          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 15,marginLeft:40 }]}>Acceder</Link>
 
-          <Link href="/register" style={[styles.registerText, { marginRight: 25, marginTop: 10 }]}>Registrate</Link>
+          <Link href="/register" style={[styles.registerText, { marginRight: 65, marginTop: 15 }]}>Registrate</Link>
 
 
         </View>
@@ -76,7 +76,7 @@ export default function index() {
 
       </View>
 
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginLeft: 10 }}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={[styles.forgetPassword]}>
           ¿Olvidaste la contraseña?
         </Text>
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     textDecorationLine: 'underline',
     color: Colors.colorPrimario,
+    paddingTop:5
 
   },
   imageLogin: {

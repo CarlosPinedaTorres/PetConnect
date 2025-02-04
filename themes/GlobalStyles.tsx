@@ -67,7 +67,7 @@ export const GlobalStyles = StyleSheet.create({
         fontFamily: "PoppinsBold",
         textAlign:"center",
         fontSize:20,
-        paddingTop:6,
+        paddingTop:5,
     },
     fondoBlanco: {
         backgroundColor: Colors.blanco,
