@@ -18,7 +18,7 @@ const LayoutDrawer = () => {
       drawerItemStyle: {
         borderRadius: 10,
         backgroundColor: Colors.blanco,
-        marginTop: 30
+        marginTop: 20
       },
       drawerStyle: {
         backgroundColor: Colors.colorPrimario
@@ -55,7 +55,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 100,
+          height: 70,
 
         },
 
@@ -86,7 +86,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 100,
+          height: 70,
         },
       }}
     />
@@ -112,7 +112,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 100,
+          height: 70,
         },
       }}
     />
@@ -137,7 +137,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 100,
+          height: 70,
         },
       }}
     />
@@ -163,7 +163,7 @@ const LayoutDrawer = () => {
         headerTitleAlign: "center",
         headerStyle: {
           backgroundColor: Colors.colorPrimario,
-          height: 100,
+          height: 70,
         },
       }}
     />
@@ -179,30 +179,30 @@ const LayoutDrawer = () => {
 const styles = StyleSheet.create({
 
   inconMenu: {
-    paddingLeft: 25,
+    paddingLeft: 5,
     transform: [{ scale: 1.5 }],
   },
 
   logoDrawerMain: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     position: "absolute",
-    right: -135,
+    right: -90,
   },
 
 
   logoDrawerPatitas: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     position: "absolute",
-    right: -75,
+    right: -60,
   },
 
   logoDrawerPerros: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     position: "absolute",
-    right: -170,
+    right: -120,
   },
 
 })

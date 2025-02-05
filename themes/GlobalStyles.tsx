@@ -3,7 +3,7 @@ import { Colors } from "./Colors"
 export const GlobalStyles = StyleSheet.create({
     drawerTitle:{
         fontFamily:"WendyOne",
-        fontSize:25,
+        fontSize:20,
         color:Colors.blanco,
         textAlign: "center", 
         
@@ -41,7 +41,7 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.negro,
     },
     logoLogin: {
-        width: 60,
+        width: 40,
         height: 60,
         position: "absolute",
         right:20,
@@ -50,7 +50,7 @@ export const GlobalStyles = StyleSheet.create({
     },
   
     huellas: {
-        width: 40,
+        width: 35,
         height:40,
     },
     fondoAzul: {

@@ -28,8 +28,8 @@ export default function index() {
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
-      <Text style={[styles.textColor, styles.textMedium, { marginTop: 55 }]}>Bienvenido a</Text>
-      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 50 }]}>PetConnect</Text>
+      <Text style={[styles.textColor, styles.textMedium, { marginTop: 50 }]}>Bienvenido a</Text>
+      <Text style={[styles.textColor, styles.textLarge, { marginBottom: 35 }]}>PetConnect</Text>
       <View style={[styles.containerLogin]}>
 
         <Image
@@ -60,17 +60,14 @@ export default function index() {
           source={require("@/assets/images/huellaDer.png")}
         />
         <View style={[styles.inputText, { marginTop: 30 }]}>
-          <CustomTextInput placeholder="Email" type="email" onChangeText={(value) => userDataChange("email", value)} value={dataUser.email} width={350} height={50} />
+          <CustomTextInput placeholder="Email" type="email" onChangeText={(value) => userDataChange("email", value)} value={dataUser.email} width={320} height={50} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={350} height={50} />
+          <CustomTextInput placeholder="Contraseña" type="password"  value={dataUser.password}  onChangeText={(value)=>userDataChange("password",value)} width={320} height={50} />
         </View>
         <View style={styles.buttonContainer}>
-          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 15,marginLeft:40 }]}>Acceder</Link>
-
-          <Link href="/register" style={[styles.registerText, { marginRight: 65, marginTop: 15 }]}>Registrate</Link>
-
-
+          <Link href="/drawer" style={[GlobalStyles.linkButton, { marginTop: 5}]}>Acceder</Link>
+          <Link href="/register" style={[styles.registerText, { marginRight: 30, marginTop: 5 }]}>Registrate</Link>
         </View>
 
 
@@ -93,7 +90,7 @@ const styles = StyleSheet.create({
   forgetPassword: {
     fontFamily: "PoppinsBold",
     color: Colors.blanco,
-    fontSize: 20,
+    fontSize: 15,
     textDecorationLine: 'underline',
   }
   ,
@@ -118,8 +115,8 @@ const styles = StyleSheet.create({
 
   },
   imageLogin: {
-    width: 500,
-    height: 230,
+    width: 330,
+    height: 210,
     position: "absolute",
     top: -45
 
@@ -131,12 +128,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     maxWidth: 720,
-    height: 490,
+    height: 470,
 
   },
   tituloLogin: {
     fontFamily: "PoppinsBold",
-    fontSize: 40,
+    fontSize: 30,
     color: Colors.colorPrimario,
     marginTop: 160,
     width: "100%",
@@ -162,7 +159,7 @@ const styles = StyleSheet.create({
 
   },
   textMedium: {
-    fontSize: 30,
+    fontSize: 20,
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
@@ -171,7 +168,7 @@ const styles = StyleSheet.create({
   },
   textLarge: {
     fontFamily: "WendyOne",
-    fontSize: 60,
+    fontSize: 35,
     fontWeight: "regular",
     marginBottom: 20,
     textAlign: "center",
