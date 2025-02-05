@@ -29,7 +29,7 @@ const register = () => {
         resizeMode="contain"
         source={require("@/assets/images/logo.png")}
       />
-      <Text style={[styles.textColor, styles.textMedium, { marginTop: 55 }]}>Bienvenido a</Text>
+      <Text style={[styles.textColor, styles.textMedium, { marginTop: 35 }]}>Registrate en</Text>
       <Text style={[styles.textColor, styles.textLarge, { marginBottom: 140 }]}>PetConnect</Text>
       <Image
         style={[styles.animalesRegister]}
@@ -60,20 +60,20 @@ const register = () => {
           source={require("@/assets/images/huellaDer.png")}
         />
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Nombre" value={dataUser.nombre}  onChangeText={(value)=>changeDataUser("nombre",value)} type={"nombre"}  width={340} height={50} />
+          <CustomTextInput placeholder="Nombre" value={dataUser.nombre}  onChangeText={(value)=>changeDataUser("nombre",value)} type={"nombre"}  width={320} height={50} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder="Email"  value={dataUser.email}  onChangeText={(value)=>changeDataUser("email",value)} type={"email"}  width={340} height={50} />
+          <CustomTextInput placeholder="Email"  value={dataUser.email}  onChangeText={(value)=>changeDataUser("email",value)} type={"email"}  width={320} height={50} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Contraseña' value={dataUser.password}  onChangeText={(value)=>changeDataUser("password",value)} type={"password"}   width={340} height={50} />
+          <CustomTextInput placeholder='Contraseña' value={dataUser.password}  onChangeText={(value)=>changeDataUser("password",value)} type={"password"}   width={320} height={50} />
         </View>
         <View style={[styles.inputText]}>
-          <CustomTextInput placeholder='Repetir contraseña' value={dataUser.repeatPassword}  onChangeText={(value)=>changeDataUser("repeatPassword",value)} type={"repeatPassword"}  width={340} height={50} />
+          <CustomTextInput placeholder='Repetir contraseña' value={dataUser.repeatPassword}  onChangeText={(value)=>changeDataUser("repeatPassword",value)} type={"repeatPassword"}  width={320} height={50} />
         </View>
         <View style={styles.buttonContainer}>
-          <Link href="/" style={[GlobalStyles.linkButton, { marginLeft: 35, marginTop: 25 }]}>Registrate</Link>
-          <Link href="/" style={[GlobalStyles.linkButton, { marginRight: 70, marginTop: 25 }]}>Cancelar</Link>
+          <Link href="/" style={[GlobalStyles.linkButton, { marginLeft: 10, marginTop: 10 }]}>Registrate</Link>
+          <Link href="/" style={[GlobalStyles.linkButton, { marginRight: 10, marginTop: 10 }]}>Cancelar</Link>
         </View>
 
 
@@ -92,23 +92,23 @@ const styles = StyleSheet.create({
 
   titulo: {
     fontFamily: "PoppinsBold",
-    fontSize: 30,
+    fontSize: 20,
     color: Colors.colorPrimario,
-    marginTop: 25,
+    marginTop: 15,
     marginBottom: 25
   },
   animalesRegister: {
     position: "absolute",
-    width: 300,
-    height: 200,
-    left: 100,
-    top: 120,
-    marginTop: 50
+    width: 250,
+    height: 120,
+    left: 50,
+    top: 122,
+  
   },
   huellaDer: {
     position: "absolute",
     right: 15,
-    top: 70
+    top: 60
 
   },
   huellaIzq: {
@@ -121,28 +121,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-    marginLeft: 35,
-
-
   },
 
 
   loginText: {
     fontFamily: 'PoppinsBold',
-    fontSize: 16,
+    fontSize: 15,
     textDecorationLine: 'underline',
     color: Colors.blanco,
-    marginRight: 100,
-    paddingTop: 15
+    marginRight: 10,
+    paddingTop: 10
 
 
   },
   textCuenta: {
     fontFamily: 'PoppinsRegular',
-    fontSize: 16,
+    fontSize: 15,
     textAlign: 'left',
     color: Colors.blanco,
-    paddingTop: 15
+    paddingTop: 10
 
   },
   containerRegister: {
@@ -152,8 +149,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     maxWidth: 720,
-    height: 480,
-    marginTop: 53
+    height: 390,
+  
 
   },
   textColor: {
@@ -163,7 +160,7 @@ const styles = StyleSheet.create({
 
   },
   textMedium: {
-    fontSize: 30,
+    fontSize: 20,
     marginBottom: 10,
     fontFamily: "WendyOne",
     fontWeight: "regular",
@@ -172,14 +169,13 @@ const styles = StyleSheet.create({
   },
   textLarge: {
     fontFamily: "WendyOne",
-    fontSize: 60,
+    fontSize: 35,
     fontWeight: "regular",
-    marginBottom: 20,
     textAlign: "center",
     width: "100%",
   },
   inputText: {
-    margin: 10
+    margin: 5
   },
 
 
