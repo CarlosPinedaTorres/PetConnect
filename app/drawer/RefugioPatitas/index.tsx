@@ -20,17 +20,17 @@ const index = () => {
             placeholder={'Buscar...'}
             value={nameAnimal}
             onChangeText={(value)=>buscarAnimal(value)}
-            style={[GlobalStyles.textInput2, { height: 60, width: 340, fontSize: 30 }]}
+            style={[GlobalStyles.textInput2, { height: 50, width: 140, fontSize: 20 }]}
           />
         </View>
         <Image
-          style={[{ position: 'absolute', width: 60, height: 60, left: 560 }]}
+          style={[{ position: 'absolute', width: 40, height: 40, left: 280 }]}
           source={require("@/assets/images/lupa2.png")}
         />
       </View>
       <View style={[{ flexDirection: 'row' }]}>
         <Text style={[styles.texto_categoria]}>Categorias</Text>
-        <Text style={[styles.texto_vertodo,{marginLeft:370}]}>Ver todo</Text>
+        <Text style={[styles.texto_vertodo,{marginLeft:170}]}>Ver todo</Text>
       </View>
       <View style={[styles.cuadrosContainer]}>
         <View style={[styles.cuadroIndividual]}>
@@ -58,25 +58,25 @@ const index = () => {
       <View style={[styles.animalesContainer]}>
         <View style={[styles.cuadroIndividual2]}>
           <Image
-            style={[{ width: 220, height: 180, borderRadius: 15 }]}
+            style={[{ width: 120, height: 90, borderRadius: 15 }]}
             source={require("@/assets/images/Pluto.png")}
           />
-          <Text style={[{ fontSize: 30, fontWeight: 'bold', marginRight: 138 }]}>Pluto</Text>
-          <Text style={[{ fontSize: 26, marginRight:30}]}>Macho, 1.5 años</Text>
+          <Text style={[{ fontSize: 17, fontWeight: 'bold', marginRight: 75 }]}>Pluto</Text>
+          <Text style={[{ fontSize: 15, marginRight:8}]}>Macho, 1.5 años</Text>
           <Image
-            style={[{ marginLeft: 180, width: 35, height: 35,marginTop:28}]}
+            style={[{ marginLeft: 80, width: 19, height: 19,marginTop:2}]}
             source={require("@/assets/images/huella.png")}
           />
         </View>
         <View style={[styles.cuadroIndividual2]}>
           <Image
-            style={[{ width: 220, height:185, borderRadius: 15 }]}
+            style={[{ width: 120, height:90, borderRadius: 15 }]}
             source={require("@/assets/images/Afro y Shaggy.png")}
           />
-          <Text style={[{ fontSize: 30, fontWeight: 'bold',marginRight:8 }]}>Afro & Shaggy</Text>
-          <Text style={[{ fontSize: 26,marginRight:20}]}>Machos, 3 meses</Text>
+          <Text style={[{ fontSize: 18, fontWeight: 'bold',marginRight:7 }]}>Afro & Shaggy</Text>
+          <Text style={[{ fontSize: 15,marginRight:7}]}>Machos, 3 meses</Text>
           <Image
-            style={[{ marginLeft: 180, width: 52, height: 52,marginTop:15}]}
+            style={[{ marginLeft: 80, width: 20, height: 20,marginTop:2}]}
             source={require("@/assets/images/megusta_negro.png")}
           />
         </View>
@@ -88,7 +88,7 @@ const index = () => {
         />
       </View>
       <View style={[styles.footer]}>
-        <Text style={[styles.texto_animales, {margin: -50,marginTop:-70,textAlign:'justify'}]}>Adoptar es un compromiso para toda la vida, piensalo bien antes de dar el paso. {'\n'}{'\n'}Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text>
+        <Text style={[styles.texto_animales, {marginTop:-2,textAlign:'justify'}]}>Adoptar es un compromiso para toda la vida, piensalo bien antes de dar el paso. {'\n'}{'\n'}Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text>
       </View>
     </View>
   )
@@ -103,42 +103,41 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   texto_animales: {
-    fontSize: 30,
+    fontSize: 12,
     color: Colors.blanco,
     fontFamily: 'PoppinsBold',
   },
   texto_categoria: {
-    fontFamily: 'PoppinsRegular',
-    fontSize: 28,
+    fontFamily: 'PoppinsBold',
+    fontSize: 15,
     textAlign: 'left',
-    marginLeft: 30,
-    marginTop: 20,
+    marginLeft: 20,
+    marginTop: 12,
     color: Colors.negro,
-    fontWeight: 'bold',
   },
   texto_vertodo: {
     fontFamily: 'PoppinsBold',
-    fontSize: 28,
+    fontSize: 15,
     textDecorationLine: 'underline',
-    marginBottom:20,
-    marginTop: 20,
+    marginBottom:10,
+    marginTop: 10,
     color: Colors.negro,
     
   },
   searchContainer: {
-    width:580,
-    height:90,
+    width:300,
+    height:60,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Colors.blanco,
     borderRadius: 10,
-    marginTop: 30,
-    padding: 15,
-    marginBottom:30,
+    marginTop: -5,
+    padding: 10,
+    marginBottom:-5,
   },
   searchInput: {
     flex: 1,
-    fontSize: 30,
+    fontSize: 20,
     color: Colors.negro,
     fontWeight:'bold',
   },
@@ -146,52 +145,51 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    marginTop: 20,
   },
   animalesContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    marginTop: 40,
+    marginTop: 25,
   },
   cuadroIndividual: {
-    width: 200,
-    height: 200,
+    width: 90,
+    height: 90,
     backgroundColor: Colors.naranjaClaro,
     borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: -10,
   },
   cuadroIndividual2: {
-    width: 270,
-    height: 360,
+    width: 150,
+    height: 190,
     backgroundColor: Colors.naranjaClaro,
     borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 3,
   },
   textoCuadro: {
-    fontSize: 34,
+    fontSize: 15,
     fontFamily: 'PoppinsRegular',
     color: Colors.negro,
     textAlign: 'center',
     fontWeight: 'bold',
-    marginTop:10,
+    marginTop:5,
   },
   icono: {
-    width: 110,
-    height: 110,
+    width: 40,
+    height: 40,
   },
   footer: {
     backgroundColor: Colors.colorPrimario,
-    padding: 90,
+    padding: 10,
   },
   imagen_animal: {
-    marginTop:18,
-    width: 720,
-    height: 105,
+    marginTop:15,
+    width: 360,
+    height: 54,
     alignItems:'center'
     
   },

@@ -13,23 +13,23 @@ const Mascota = () => {
           source={require("@/assets/images/Pluto.png")}
         />
         <Image
-          style={[{height:25,width:25,marginTop:20}]}
+          style={[{height:15,width:15,marginTop:10}]}
           source={require("@/assets/images/punto.png")}
         />
         <View style={[styles.fila_icono]}>
-          <Text style={[styles.nombre_perro,{marginLeft:38}]}>Pluto</Text>
+          <Text style={[styles.nombre_perro,{marginLeft:25}]}>Pluto</Text>
           <Image
-            style={[styles.icono, { marginTop: 38, marginRight: 20 }]}
+            style={[styles.icono, { marginTop: 18, marginRight: 25 }]}
             source={require("@/assets/images/megusta_negro.png")}
           />
         </View>
-        <View style={[{ flexDirection: 'row', marginRight: 310, }]}>
+        <View style={[{ flexDirection: 'row', marginRight: 180, }]}>
           <Image
-            style={[{ height: 55, width: 47, marginRight: 10 }]}
+            style={[{ height: 25, width: 25, marginRight: 5}]}
             source={require("@/assets/images/ubicacion.png")}
 
           />
-          <Text style={[{ fontSize: 35,fontFamily:'PoppinsRegular'}]}>Murcia</Text>
+          <Text style={[{ fontSize: 15,fontFamily:'PoppinsRegular'}]}>Murcia</Text>
         </View>
         <View style={[styles.cuadrosContainer]}>
           <View style={[styles.cuadroIndividual]}>
@@ -45,20 +45,20 @@ const Mascota = () => {
             <Text style={[styles.texto_normal]}>Bodeguero</Text>
           </View>
         </View>
-        <View style={[styles.cuadrosContainer,{marginTop: 40}]}>
+        <View style={[styles.cuadrosContainer,{marginTop: 10}]}>
           <Image
             style={[styles.foto_icono, { marginRight: 10 }]}
             source={require("@/assets/images/Eros.png")}
           />
-          <Text style={[styles.texto_normal, { fontSize: 30 }]}>Ana{"\n"}PerrosAbandona2</Text>
+          <Text style={[styles.texto_normal, { fontSize: 15 }]}>Ana{"\n"}PerrosAbandona2</Text>
           <Image
             resizeMode='contain'
-            style={[styles.icono_utilidad, { marginTop: 30, marginLeft: 10 }]}
+            style={[styles.icono_utilidad, { marginTop: 10, marginLeft: 10 }]}
             source={require("@/assets/images/llamar.png")}
           />
           <Image
             resizeMode='contain'
-            style={[styles.icono_utilidad, { marginTop: 30, marginLeft: 10 }]}
+            style={[styles.icono_utilidad, { marginTop: 10, marginLeft: 10 }]}
             source={require("@/assets/images/mensajes.png")}
           />
           
@@ -79,34 +79,34 @@ const styles = StyleSheet.create({
   },
   texto_boton:{
     fontFamily:"PoppinsBold",
-    fontSize:35,
+    fontSize:15,
   },
   boton:{
-    width:380,
-    height:100,
+    width:90,
+    height:60,
     backgroundColor: Colors.naranjaClaro,
-    borderRadius: 30,
+    borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:50,
+    marginTop:-5,
   },
   icono:{
-    width:60,
-    height:60
+    width:30,
+    height:30
   },
   container:{
-    backgroundColor:Colors.naranjaClaro,
     margin:20,
+    backgroundColor:Colors.naranjaClaro,
     borderRadius:20,
-    padding:15,
+    padding:10,
     alignItems:'center',
   },
   titulo:{
-    fontSize:30,
+    fontSize:20,
     fontFamily:"PoppinsBold",
   },
   texto_normal:{
-    fontSize:25,
+    fontSize:12,
     fontFamily:"PoppinsBold",
   },
   fila_icono:{
@@ -117,41 +117,40 @@ const styles = StyleSheet.create({
   },
   nombre_perro:{
     fontFamily:"PoppinsBold",
-    fontSize:50,
-    marginTop:15,
+    fontSize:20,
   },
   foto:{
     justifyContent:'center',
-    width:500,
-    height:420,
+    width:250,
+    height:200,
     borderRadius:20,
   },
   cuadrosContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 40,
-    marginBottom:20,
+    marginTop: 10,
+    marginBottom:5,
     justifyContent:'space-between'
   },
   cuadroIndividual: {
-    width:170,
-    height:150,
+    width:85,
+    height:80,
     backgroundColor: Colors.blanco,
     borderRadius: 30,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:20,
+    marginTop:5,
     marginHorizontal:6.5,
     
   },
   foto_icono:{
-    width:100,
-    height:100,
+    width:50,
+    height:50,
     borderRadius: 50,
   },
   icono_utilidad:{
-    height:60,
-    width:65,
+    height:30,
+    width:35,
     backgroundColor:Colors.blanco,
     borderRadius:20,
   },
