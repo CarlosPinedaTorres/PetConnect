@@ -63,14 +63,15 @@ const styles = StyleSheet.create({
   },
   buttonEnviar: {
     alignItems: "center",
-    marginTop: 15,
+    marginTop: 10,
 
   },
   contenedorMensaje: {
     backgroundColor: Colors.azulClaro,
-    height: 150,
+    height: 100,
     marginLeft: 20,
     marginRight: 20,
+    marginTop:10,
     borderRadius: 20,
     padding: 10,
 
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
 
   },
   textoInfoUbi: {
-    fontSize: 15,
+    fontSize: 12,
     fontFamily: "PoppinsBold",
     paddingRight: 30,
     justifyContent: "center",
@@ -95,7 +96,9 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     alignContent: "center",
     alignItems: "center",
-    margin: 25
+    justifyContent:"center",
+    marginLeft:15,
+    width:330
   },
 
   containerInformacion: {
@@ -105,6 +108,7 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     marginRight: 25,
     height: 100,
+   
 
   },
 
@@ -118,8 +122,8 @@ const styles = StyleSheet.create({
   },
   mapaImage: {
     resizeMode: "contain",
-    width: 430,
-    height: 350,
+    width: 310,
+    height: 250,
   },
   contenedorMapa: {
     justifyContent: "center",
